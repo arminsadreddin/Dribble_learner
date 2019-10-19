@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/build/hfo-teams-prefix/src/hfo-teams" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/build/librcsc-prefix/src/librcsc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/build/rcssserver-prefix/src/rcssserver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/build/soccerwindow2-prefix/src/soccerwindow2" vcs="Git" />
+  </component>
+</project>

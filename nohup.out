@@ -1,0 +1,32 @@
+[start.py] Cleaning up server and other processes
+Traceback (most recent call last):
+  File "./bin/HFO", line 243, in <module>
+    main(parseArgs())
+  File "./bin/HFO", line 118, in main
+    %(serverCommand + serverOptions)
+AssertionError: [start.py] Failed to launch Server with command: "/home/arminsadreddin/Documents/BS_Project/HFO/bin/rcssserver server::port=6000 server::coach_port=6001 server::olcoach_port=6002 server::coach=1 server::game_logging=1 server::text_logging=1 server::hfo_logging=1 server::hfo_log_dir=log/ server::game_log_dir=log/ server::text_log_dir=log/ server::synch_mode=1 server::hfo=1 server::fullstate_l=0 server::fullstate_r=0 server::coach_w_referee=1 server::hfo_max_trial_time=1000 server::hfo_max_trials=500 server::hfo_max_frames=-1 server::hfo_offense_on_ball=0 server::random_seed=-1 server::hfo_max_untouched_time=200 server::hfo_min_ball_pos_x=0.000000 server::hfo_max_ball_pos_x=0.200000 server::hfo_min_ball_pos_y=-0.800000 server::hfo_max_ball_pos_y=0.800000 server::say_msg_size=1000 server::record_messages=0"
+
+Another rcssserver may be running on the same port?
+Try: "killall -9 rcssserver"
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/atexit.py", line 24, in _run_exitfuncs
+    func(*targs, **kargs)
+  File "./bin/HFO", line 24, in cleanup
+    p.terminate()
+  File "/usr/lib/python2.7/subprocess.py", line 1567, in terminate
+    self.send_signal(signal.SIGTERM)
+  File "/usr/lib/python2.7/subprocess.py", line 1562, in send_signal
+    os.kill(self.pid, sig)
+OSError: [Errno 3] No such process
+Error in sys.exitfunc:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/atexit.py", line 24, in _run_exitfuncs
+    func(*targs, **kargs)
+  File "./bin/HFO", line 24, in cleanup
+    p.terminate()
+  File "/usr/lib/python2.7/subprocess.py", line 1567, in terminate
+    self.send_signal(signal.SIGTERM)
+  File "/usr/lib/python2.7/subprocess.py", line 1562, in send_signal
+    os.kill(self.pid, sig)
+OSError: [Errno 3] No such process

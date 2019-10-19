@@ -1,0 +1,2816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="HFO"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/arminsadreddin/Documents/BS_Project/HFO/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/arminsadreddin/Documents/BS_Project/HFO/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/arminsadreddin/Documents/BS_Project/HFO/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/arminsadreddin/Documents/BS_Project/HFO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/arminsadreddin/Documents/BS_Project/HFO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/arminsadreddin/Documents/BS_Project/HFO/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/arminsadreddin/Documents/BS_Project/HFO/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/arminsadreddin/Documents/BS_Project/HFO/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/arminsadreddin/Documents/BS_Project/HFO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/arminsadreddin/Documents/BS_Project/HFO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/arminsadreddin/Documents/BS_Project/HFO/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/arminsadreddin/Documents/BS_Project/HFO/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/arminsadreddin/Documents/BS_Project/HFO/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/arminsadreddin/Documents/BS_Project/HFO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/arminsadreddin/Documents/BS_Project/HFO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="HFO">
+				<Option output="/home/arminsadreddin/Documents/BS_Project/HFO/cmake-build-debug/HFO" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/arminsadreddin/Documents/BS_Project/HFO/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/example"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/ann"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/coach"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/common"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/formation"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/triangle"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/gz"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/monitor"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/net"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/param"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/time"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/trainer"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/conf"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/gzip"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/net"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/model"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/example/sarsa_libraries/funcapprox"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/example/sarsa_libraries/policy"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/example/sarsa_libraries/python_wrapper"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/hfo"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/src"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/arminsadreddin/Documents/BS_Project/HFO/cmake-build-debug/Makefile&quot;  VERBOSE=1 HFO"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/arminsadreddin/Documents/BS_Project/HFO/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/arminsadreddin/Documents/BS_Project/HFO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/arminsadreddin/Documents/BS_Project/HFO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="HFO/fast">
+				<Option output="/home/arminsadreddin/Documents/BS_Project/HFO/cmake-build-debug/HFO" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/arminsadreddin/Documents/BS_Project/HFO/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/example"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/ann"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/coach"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/common"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/formation"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/triangle"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/gz"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/monitor"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/net"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/param"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/time"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/trainer"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/conf"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/gzip"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/net"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/model"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/example/sarsa_libraries/funcapprox"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/example/sarsa_libraries/policy"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/example/sarsa_libraries/python_wrapper"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/hfo"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/src"/>
+					<Add directory="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/arminsadreddin/Documents/BS_Project/HFO/cmake-build-debug/Makefile&quot;  VERBOSE=1 HFO/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/arminsadreddin/Documents/BS_Project/HFO/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/arminsadreddin/Documents/BS_Project/HFO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/arminsadreddin/Documents/BS_Project/HFO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/config.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/example/gzifstream_main.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/example/gzofstream_main.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/example/loader_main.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/example/param_main.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/example/result_writer.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/example/result_writer.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/example/result_writer_main.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/arm_off.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/arm_point_to_point.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/basic_actions.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/basic_actions.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/bhv_before_kick_off.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/bhv_before_kick_off.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/bhv_body_neck_to_ball.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/bhv_body_neck_to_point.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/bhv_emergency.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/bhv_emergency.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/bhv_go_to_point_look_ball.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/bhv_go_to_point_look_ball.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/bhv_neck_body_to_ball.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/bhv_neck_body_to_point.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/bhv_scan_field.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/bhv_scan_field.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/bhv_shoot.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/bhv_shoot2008.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/bhv_shoot2008.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_advance_ball.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_advance_ball2009.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_advance_ball2009.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_clear_ball.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_clear_ball2009.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_clear_ball2009.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_dribble.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_dribble2008.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_dribble2008.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_go_to_point.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_go_to_point2009.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_go_to_point2009.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_go_to_point2010.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_go_to_point2010.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_go_to_point_dodge.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_go_to_point_dodge.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_hold_ball.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_hold_ball2008.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_hold_ball2008.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_intercept.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_intercept2009.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_intercept2009.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_kick_collide_with_ball.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_kick_collide_with_ball.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_kick_one_step.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_kick_one_step.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_kick_to_relative.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_kick_to_relative.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_pass.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_pass.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_smart_kick.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_smart_kick.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_stop_ball.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_stop_ball.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_stop_dash.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_stop_dash.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_tackle_to_point.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_turn_to_angle.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_turn_to_ball.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/body_turn_to_point.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/intention_dribble2008.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/intention_dribble2008.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/intention_time_limit_action.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/intention_time_limit_action.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/kick_table.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/kick_table.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/neck_scan_field.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/neck_scan_field.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/neck_scan_players.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/neck_scan_players.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/neck_turn_to_ball.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/neck_turn_to_ball_and_player.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/neck_turn_to_ball_and_player.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/neck_turn_to_ball_or_scan.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/neck_turn_to_ball_or_scan.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/neck_turn_to_goalie_or_scan.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/neck_turn_to_goalie_or_scan.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/neck_turn_to_low_conf_teammate.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/neck_turn_to_low_conf_teammate.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/neck_turn_to_player_or_scan.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/neck_turn_to_player_or_scan.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/neck_turn_to_point.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/neck_turn_to_relative.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/shoot_table2008.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/shoot_table2008.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/view_change_width.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/view_normal.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/view_synch.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/view_synch.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/action/view_wide.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/ann/bpn1.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/ann/ngnet.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/ann/ngnet.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/ann/rbf.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/ann/rbf.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/coach/coach_agent.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/coach/coach_agent.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/coach/coach_audio_sensor.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/coach/coach_audio_sensor.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/coach/coach_command.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/coach/coach_command.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/coach/coach_config.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/coach/coach_config.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/coach/coach_debug_client.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/coach/coach_debug_client.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/coach/global_object.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/coach/global_object.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/coach/global_visual_sensor.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/coach/global_visual_sensor.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/coach/global_world_model.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/coach/global_world_model.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/coach/player_type_analyzer.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/coach/player_type_analyzer.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/common/audio_codec.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/common/audio_codec.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/common/audio_memory.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/common/audio_memory.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/common/audio_message.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/common/basic_client.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/common/basic_client.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/common/free_message_parser.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/common/logger.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/common/logger.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/common/periodic_callback.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/common/player_param.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/common/player_param.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/common/player_type.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/common/player_type.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/common/say_message_parser.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/common/say_message_parser.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/common/server_param.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/common/server_param.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/common/soccer_agent.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/common/soccer_agent.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/common/stamina_model.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/common/stamina_model.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/common/team_graphic.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/common/team_graphic.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/factory.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/formation/formation.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/formation/formation.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/formation/formation_bpn.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/formation/formation_bpn.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/formation/formation_cdt.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/formation/formation_cdt.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/formation/formation_dt.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/formation/formation_dt.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/formation/formation_knn.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/formation/formation_knn.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/formation/formation_ngnet.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/formation/formation_ngnet.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/formation/formation_rbf.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/formation/formation_rbf.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/formation/formation_sbsp.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/formation/formation_sbsp.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/formation/formation_static.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/formation/formation_static.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/formation/formation_uva.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/formation/formation_uva.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/formation/sample_data.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/formation/sample_data.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/game_mode.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/game_time.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/angle_deg.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/angle_deg.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/circle_2d.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/circle_2d.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/composite_region_2d.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/composite_region_2d.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/convex_hull.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/convex_hull.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/delaunay_triangulation.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/delaunay_triangulation.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/line_2d.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/line_2d.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/matrix_2d.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/matrix_2d.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/polygon_2d.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/polygon_2d.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/ray_2d.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/ray_2d.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/rect_2d.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/rect_2d.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/region_2d.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/sector_2d.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/sector_2d.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/segment_2d.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/segment_2d.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/size_2d.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/test_convex_hull.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/test_matrix_2d.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/test_polygon_2d.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/test_rect_2d.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/test_rundom_convex_hull.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/test_segment_2d.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/test_triangle_2d.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/test_vector_2d.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/test_voronoi_diagram.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/triangle/showme.c">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/triangle/triangle.c">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/triangle/triangle.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/triangle/tricall.c">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/triangle_2d.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/triangle_2d.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/triangulation.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/triangulation.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/vector_2d.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/vector_2d.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/voronoi_diagram.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/voronoi_diagram_original.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/voronoi_diagram_original.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/voronoi_diagram_triangle.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/geom/voronoi_diagram_triangle.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/gz.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/gz/gzcompressor.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/gz/gzcompressor.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/gz/gzfilterstream.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/gz/gzfilterstream.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/gz/gzfstream.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/gz/gzfstream.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/math_util.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/monitor/monitor_command.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/monitor/monitor_command.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/net/basic_socket.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/net/basic_socket.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/net/tcp_socket.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/net/tcp_socket.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/net/udp_socket.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/net/udp_socket.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/param/cmd_line_parser.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/param/cmd_line_parser.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/param/conf_file_parser.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/param/conf_file_parser.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/param/param_map.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/param/param_map.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/param/param_parser.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/param/rcss_param_parser.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/param/rcss_param_parser.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/abstract_player_object.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/abstract_player_object.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/action_effector.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/action_effector.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/audio_sensor.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/audio_sensor.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/ball_object.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/ball_object.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/body_sensor.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/body_sensor.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/debug_client.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/debug_client.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/free_message.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/freeform_parser.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/freeform_parser.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/fullstate_sensor.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/fullstate_sensor.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/intercept_table.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/intercept_table.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/localization.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/localization_default.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/localization_default.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/localization_pfilter.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/localization_pfilter.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/object_table.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/object_table.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/penalty_kick_state.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/penalty_kick_state.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/player_agent.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/player_agent.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/player_command.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/player_command.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/player_config.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/player_config.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/player_evaluator.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/player_intercept.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/player_intercept.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/player_object.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/player_object.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/player_predicate.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/say_message_builder.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/say_message_builder.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/see_state.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/see_state.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/self_intercept_v13.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/self_intercept_v13.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/self_object.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/self_object.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/soccer_action.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/soccer_action.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/soccer_intention.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/view_area.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/view_grid_map.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/view_grid_map.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/view_mode.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/view_mode.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/visual_sensor.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/visual_sensor.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/world_model.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/player/world_model.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/random.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/handler.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/holder.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/holder.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/parser.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/parser.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/parser_v1.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/parser_v1.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/parser_v2.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/parser_v2.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/parser_v3.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/parser_v3.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/parser_v4.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/parser_v4.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/parser_v5.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/parser_v5.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/reader.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/serializer.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/serializer.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/serializer_v1.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/serializer_v1.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/serializer_v2.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/serializer_v2.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/serializer_v3.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/serializer_v3.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/serializer_v4.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/serializer_v4.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/serializer_v5.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/serializer_v5.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/types.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/util.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/rcg/util.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/soccer_math.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/time/timer.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/time/timer.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/timer.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/trainer/trainer_agent.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/trainer/trainer_agent.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/trainer/trainer_command.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/trainer/trainer_command.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/trainer/trainer_config.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/trainer/trainer_config.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/types.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/util/game_mode.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/util/soccer_math.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/util/version.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/rcsc/version.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/src/rcg2txt.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/src/rcgrenameteam.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/src/rcgreverse.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/src/rcgverconv.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/src/rcgversion.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/src/resultprinter.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/src/scheduler.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/librcsc-prefix/src/librcsc/src/tableprinter.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/config.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/conf/builder.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/conf/builder.hpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/conf/paramgetter.hpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/conf/paramsetter.hpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/conf/parser.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/conf/parser.hpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/conf/statushandler.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/conf/statushandler.hpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/conf/streamstatushandler.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/conf/streamstatushandler.hpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/factory.hpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/gzip/gzfstream.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/gzip/gzfstream.hpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/gzip/gzstream.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/gzip/gzstream.hpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/net/addr.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/net/addr.hpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/net/iosocketstream.hpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/net/isocketstream.hpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/net/osocketstream.hpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/net/socket.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/net/socket.hpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/net/socketstreambuf.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/net/socketstreambuf.hpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/net/tcpsocket.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/net/tcpsocket.hpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/net/udpsocket.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/net/udpsocket.hpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/rcssbase/parser.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/arithop.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/arithop.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/arm.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/audio.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/audio.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/bodysender.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/bodysender.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/clangaction.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/clangaction.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/clangadvicemsg.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/clangadvicemsg.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/clangbuilder.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/clangbuilder.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/clangdefmsg.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/clangdefmsg.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/clangdelmsg.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/clangdelmsg.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/clangfreeformmsg.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/clangfreeformmsg.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/clanginfomsg.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/clanginfomsg.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/clangmetamsg.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/clangmetamsg.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/clangmsg.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/clangmsg.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/clangmsgbuilder.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/clangmsgbuilder.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/clangparser.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/clangparser.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/clangrulemsg.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/clangrulemsg.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/clangunsuppmsg.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/clangunsuppmsg.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/clangutil.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/clangutil.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/client.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/coach.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/coach.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/coach_lang_comp.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/coach_lang_comp.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/coach_lang_parser.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/coach_lang_parser.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/coach_lang_tok.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/coach_lang_tok.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/coach_lang_tok_lex.yy.c">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/compop.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/compop.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/compress.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/cond.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/cond.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/csvsaver.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/csvsaver.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/dispsender.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/dispsender.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/field.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/field.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/fullstatesender.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/fullstatesender.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/heteroplayer.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/heteroplayer.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/initsender.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/initsender.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/initsendercoach.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/initsendercoach.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/initsenderlogger.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/initsenderlogger.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/initsendermonitor.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/initsendermonitor.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/initsenderonlinecoach.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/initsenderonlinecoach.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/initsenderplayer.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/initsenderplayer.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/landmarkreader.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/landmarkreader.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/logger.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/logger.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/main.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/monitor.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/monitor.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/object.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/object.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/observer.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/param.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/pcombuilder.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/pcombuilder.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/pcomparser.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/pcomparser.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/player.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/player.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/player_command_parser.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/player_command_parser.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/player_command_tok.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/player_command_tok.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/player_command_tok_lex.yy.c">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/playerparam.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/playerparam.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/random.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/rcssexceptions.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/rcssexceptions.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/referee.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/referee.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/region.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/region.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/remoteclient.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/remoteclient.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/resultsaver.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/resultsaver.hpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/rule.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/rule.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/sender.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializer.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializer.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializercoachstdv1.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializercoachstdv1.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializercoachstdv13.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializercoachstdv13.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializercoachstdv14.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializercoachstdv14.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializercoachstdv7.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializercoachstdv7.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializercoachstdv8.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializercoachstdv8.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializercommonstdv1.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializercommonstdv1.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializercommonstdv7.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializercommonstdv7.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializercommonstdv8.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializercommonstdv8.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializermonitor.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializermonitor.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializeronlinecoachstdv1.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializeronlinecoachstdv1.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializeronlinecoachstdv13.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializeronlinecoachstdv13.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializeronlinecoachstdv14.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializeronlinecoachstdv14.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializeronlinecoachstdv6.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializeronlinecoachstdv6.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializeronlinecoachstdv7.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializeronlinecoachstdv7.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializeronlinecoachstdv8.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializeronlinecoachstdv8.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializerplayerstdv1.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializerplayerstdv1.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializerplayerstdv13.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializerplayerstdv13.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializerplayerstdv14.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializerplayerstdv14.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializerplayerstdv7.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializerplayerstdv7.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializerplayerstdv8.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serializerplayerstdv8.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serverparam.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/serverparam.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/stadium.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/stadium.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/stdoutsaver.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/stdoutsaver.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/stdtimer.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/stdtimer.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/synctimer.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/synctimer.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/team.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/team.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/timeable.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/timer.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/types.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/utility.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/utility.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/vector.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/version.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/visual.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/visualsendercoach.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/visualsendercoach.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/visualsenderplayer.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/visualsenderplayer.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/weather.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/weather.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/xmlreader.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/xmlreader.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/xpmholder.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/rcssserver-prefix/src/rcssserver/src/xpmholder.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2-build/moc_color_setting_dialog.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2-build/moc_debug_log_dir_dialog.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2-build/moc_debug_message_window.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2-build/moc_debug_server.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2-build/moc_detail_dialog.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2-build/moc_dir_selector.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2-build/moc_field_canvas.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2-build/moc_font_setting_dialog.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2-build/moc_image_save_dialog.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2-build/moc_launcher_dialog.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2-build/moc_log_player.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2-build/moc_log_player_tool_bar.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2-build/moc_main_window.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2-build/moc_monitor_client.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2-build/moc_monitor_move_dialog.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2-build/moc_player_type_dialog.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2-build/moc_view_config_dialog.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2-build/soccerwindow2_automoc.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/model/ball.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/model/ball.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/model/debug_client_parser.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/model/debug_client_parser.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/model/debug_log_data.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/model/debug_log_data.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/model/debug_log_holder.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/model/debug_log_holder.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/model/debug_view_data.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/model/debug_view_data.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/model/main_data.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/model/main_data.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/model/monitor_view_data.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/model/monitor_view_data.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/model/options.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/model/options.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/model/player.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/model/player.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/model/playmode.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/model/playmode.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/model/point.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/model/team.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/model/team.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/model/trainer_data.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/model/trainer_data.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/model/view_holder.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/model/view_holder.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/ball_painter.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/ball_painter.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/ball_painter_rcss.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/ball_painter_rcss.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/ball_trace_painter.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/ball_trace_painter.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/color_setting_dialog.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/color_setting_dialog.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/debug_log_dir_dialog.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/debug_log_dir_dialog.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/debug_log_painter.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/debug_log_painter.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/debug_message_window.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/debug_message_window.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/debug_painter.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/debug_painter.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/debug_server.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/debug_server.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/detail_dialog.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/detail_dialog.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/dir_selector.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/dir_selector.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/draw_config.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/draw_config.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/field_canvas.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/field_canvas.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/field_painter.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/field_painter.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/font_setting_dialog.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/font_setting_dialog.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/image_save_dialog.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/image_save_dialog.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/launcher_dialog.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/launcher_dialog.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/log_player.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/log_player.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/log_player_tool_bar.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/log_player_tool_bar.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/main.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/main_window.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/main_window.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/monitor_client.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/monitor_client.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/monitor_move_dialog.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/monitor_move_dialog.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/mouse_state.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/offside_line_painter.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/offside_line_painter.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/painter_interface.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/player_control_painter.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/player_control_painter.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/player_painter.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/player_painter.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/player_painter_rcss.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/player_painter_rcss.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/player_trace_painter.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/player_trace_painter.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/player_type_dialog.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/player_type_dialog.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/score_board_painter.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/score_board_painter.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/score_board_painter_rcss.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/score_board_painter_rcss.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/team_graphic_painter.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/team_graphic_painter.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/view_config_dialog.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/view_config_dialog.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/voronoi_diagram_painter.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/build/soccerwindow2-prefix/src/soccerwindow2/src/qt4/voronoi_diagram_painter.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/example/communication_agent.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/example/hand_coded_defense_agent.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/example/hfo_example_agent.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/example/high_level_random_agent.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/example/low_level_random_agent.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/example/mid_level_dribble_agent.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/example/mid_level_kick_agent.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/example/mid_level_move_agent.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/example/sarsa_defense/high_level_sarsa_defense_agent.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/example/sarsa_libraries/funcapprox/CMAC.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/example/sarsa_libraries/funcapprox/CMAC.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/example/sarsa_libraries/funcapprox/FuncApprox.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/example/sarsa_libraries/funcapprox/FuncApprox.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/example/sarsa_libraries/funcapprox/tiles2.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/example/sarsa_libraries/funcapprox/tiles2.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/example/sarsa_libraries/policy/PolicyAgent.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/example/sarsa_libraries/policy/PolicyAgent.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/example/sarsa_libraries/policy/SarsaAgent.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/example/sarsa_libraries/policy/SarsaAgent.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/example/sarsa_libraries/python_wrapper/FA_C_wrapper.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/example/sarsa_libraries/python_wrapper/FA_C_wrapper.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/example/sarsa_libraries/python_wrapper/Policy_C_wrapper.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/example/sarsa_libraries/python_wrapper/Policy_C_wrapper.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/example/sarsa_offense/high_level_sarsa_agent.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/example/thread_agents.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/hfo/hfo_c_wrapper.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/hfo/hfo_c_wrapper.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/HFO.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/HFO.hpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/agent.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/agent.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_basic_move.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_basic_move.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_basic_offensive_kick.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_basic_offensive_kick.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_basic_tackle.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_basic_tackle.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_custom_before_kick_off.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_custom_before_kick_off.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_force_pass.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_force_pass.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_go_to_static_ball.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_go_to_static_ball.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_goalie_basic_move.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_goalie_basic_move.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_goalie_chase_ball.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_goalie_chase_ball.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_goalie_free_kick.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_goalie_free_kick.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_penalty_kick.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_penalty_kick.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_prepare_set_play_kick.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_prepare_set_play_kick.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_set_play.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_set_play.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_set_play_free_kick.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_set_play_free_kick.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_set_play_goal_kick.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_set_play_goal_kick.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_set_play_indirect_free_kick.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_set_play_indirect_free_kick.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_set_play_kick_in.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_set_play_kick_in.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_set_play_kick_off.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_set_play_kick_off.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_their_goal_kick_move.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/bhv_their_goal_kick_move.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/actgen_action_chain_length_filter.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/actgen_cross.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/actgen_cross.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/actgen_direct_pass.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/actgen_direct_pass.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/actgen_self_pass.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/actgen_self_pass.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/actgen_shoot.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/actgen_shoot.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/actgen_short_dribble.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/actgen_short_dribble.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/actgen_simple_dribble.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/actgen_simple_dribble.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/actgen_strict_check_pass.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/actgen_strict_check_pass.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/action_chain_graph.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/action_chain_graph.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/action_chain_holder.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/action_chain_holder.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/action_generator.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/action_state_pair.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/bhv_chain_action.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/bhv_chain_action.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/bhv_normal_dribble.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/bhv_normal_dribble.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/bhv_pass_kick_find_receiver.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/bhv_pass_kick_find_receiver.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/bhv_strict_check_shoot.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/bhv_strict_check_shoot.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/body_force_shoot.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/body_force_shoot.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/clear_ball.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/clear_ball.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/clear_generator.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/clear_generator.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/cooperative_action.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/cooperative_action.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/cross_generator.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/cross_generator.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/dribble.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/dribble.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/field_analyzer.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/field_analyzer.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/field_evaluator.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/hold_ball.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/hold_ball.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/neck_turn_to_receiver.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/neck_turn_to_receiver.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/pass.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/pass.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/pass_checker.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/predict_ball_object.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/predict_player_object.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/predict_state.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/predict_state.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/self_pass_generator.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/self_pass_generator.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/shoot.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/shoot.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/shoot_generator.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/shoot_generator.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/short_dribble_generator.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/short_dribble_generator.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/simple_pass_checker.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/simple_pass_checker.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/strict_check_pass_generator.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/strict_check_pass_generator.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/tackle_generator.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/chain_action/tackle_generator.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/common.hpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/communication.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/custom_message.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/feature_extractor.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/feature_extractor.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/highlevel_feature_extractor.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/highlevel_feature_extractor.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/intention_receive.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/intention_receive.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/intention_wait_after_set_play_kick.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/intention_wait_after_set_play_kick.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/keepaway_communication.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/keepaway_communication.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/lowlevel_feature_extractor.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/lowlevel_feature_extractor.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/main_agent.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/main_coach.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/main_player.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/main_trainer.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/neck_default_intercept_neck.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/neck_default_intercept_neck.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/neck_goalie_turn_neck.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/neck_goalie_turn_neck.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/neck_offensive_intercept_neck.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/neck_offensive_intercept_neck.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/role_center_back.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/role_center_back.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/role_center_forward.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/role_center_forward.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/role_defensive_half.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/role_defensive_half.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/role_goalie.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/role_goalie.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/role_keepaway_keeper.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/role_keepaway_keeper.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/role_keepaway_taker.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/role_keepaway_taker.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/role_offensive_half.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/role_offensive_half.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/role_sample.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/role_sample.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/role_side_back.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/role_side_back.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/role_side_forward.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/role_side_forward.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/role_side_half.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/role_side_half.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/sample_coach.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/sample_coach.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/sample_communication.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/sample_communication.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/sample_field_evaluator.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/sample_field_evaluator.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/sample_player.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/sample_player.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/sample_trainer.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/sample_trainer.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/soccer_role.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/soccer_role.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/strategy.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/strategy.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/view_tactical.cpp">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/src/view_tactical.h">
+			<Option target="HFO"/>
+		</Unit>
+		<Unit filename="/home/arminsadreddin/Documents/BS_Project/HFO/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
