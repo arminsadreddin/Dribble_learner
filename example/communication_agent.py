@@ -97,15 +97,17 @@ def main():
     # if episode > itertools.count() - 2:
     #   global epsilon
     #   epsilon = 0.0
+
     status = IN_GAME
     i = 0.0
-    while status == IN_GAME:
+    hfo.act(REORIENT)
+    while True:
       features = hfo.getState()
       state = preprocess(features)
       action = choose_action(state, get_epsilon(episode))
-      print(action)
-      print(action[0])
-      print(action[1])
+      #print(action)
+      #print(action[0])
+      #print(action[1])
       hfo.act(DASH, action[0], action[1]) # first param : type - for dash : second : power for dash third : angle
       status = hfo.step()
       next_features = hfo.getState()
@@ -113,6 +115,12 @@ def main():
       next_state = preprocess(next_features)
       remember(state, action , reward, next_state, status)
       i += reward
+      #print("REWARD : " + str(reward))
+      # if reward != 0.0:
+      #   print("-------------------- WHILE BREAK ------------------------------")
+      #   break
+      if reward != 0:
+        print(" - - - - - - - - - -  - got reward - - - - - - - - - - - - - - ")
     if i > max_score:
       max_score = i
     scores.append(i)
