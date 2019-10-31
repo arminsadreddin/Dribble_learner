@@ -19,6 +19,8 @@ import matplotlib.pyplot as plt
 from keras.models import model_from_json
 from time import time
 from tensorflow.python.keras.callbacks import TensorBoard
+from sympy import *
+from sympy.geometry import *
 
 file = open('loss.txt', 'a')
 
@@ -27,7 +29,7 @@ n_episodes = 5000
 n_win_player = 1000
 max_env_step = 1000
 
-gamma = 1.0
+gamma = 0.9
 epsilon = 0.5
 #epsilon_min = 0.01
 #epsilon_decay = 0.999
@@ -36,35 +38,58 @@ alpha = 0.001 # learning rate
 #alpha_decay = 0.01
 alpha_test_factor = 1.0
 
-batch_size = 512
+batch_size = 100000
 
 memory = deque(maxlen=100000)
 hfo = HFOEnvironment()
 
-feature_size = 5 # 12
+feature_size = 6 # 12
 out_layer = 36
 
 round = 0
 
 min_loss = 9999.0
 
+def load_model():
+  # Model reconstruction from JSON file
+  with open('final_model_architecture.json', 'r') as f:
+    model = model_from_json(f.read())
 
-model = Sequential()
-model.add(Dense(12,input_dim=feature_size,activation='relu'))
-model.add(Dense(24,activation='relu'))
-model.add(Dense(12,activation='relu'))
-model.add(Dense(out_layer,activation='relu'))
+  # Load weights into the new model
+  model.load_weights('final_model_weights.h5')
+  return model
 
-tensorboard = TensorBoard(log_dir="logs/{}".format(time()))
-
-
+model = load_model()
+# model = Sequential()
+# model.add(Dense(12,input_dim=feature_size,activation='relu'))
+# model.add(Dense(24,activation='relu'))
+# model.add(Dense(12,activation='relu'))
+# model.add(Dense(out_layer,activation='relu'))
+#
+# #tensorboard = TensorBoard(log_dir="logs/{}".format(time()))
+#
+#
 model.compile(loss='mse', optimizer=adam(lr=alpha), metrics=['accuracy'])
 
 
 
+def is_final_state(state):
+  return state[5]
 def filter_data(state):
-  return state[0:5]
+  data = []
+  data.append(state[0])
+  data.append(state[1])
+  data.append(state[2])
+  data.append(state[3])
+  data.append(state[4])
+  data.append(state[len(state) - 1 ])
+  return data
 def calc_reward(last_state,state):
+
+
+  if state[5] == True:
+    return 100.0
+
   # if state[5] == True:
   #   return 100.0
   self_x = state[0] * 52.5
@@ -78,11 +103,10 @@ def calc_reward(last_state,state):
   last_ball_y = last_state[4] * 34.0
   last_dist = math.sqrt(pow(last_self_x - last_ball_x, 2) + pow(last_self_y - last_ball_y, 2))
 
-  return 100*(last_dist - dist)
+  return 10*(last_dist - dist)
 
 
-  # if state[5] == True:
-  #   return 10.0
+
   # else:
   #   return 0.0;
 def create_sample_action():
@@ -98,9 +122,9 @@ def choose_action(state, epsilon):
   global round
   acts = create_sample_action()
   round += 1
-  if round >= 2000:
+  if round >= 6000:
     round = 0
-  if round >= 1000:
+  if round >= 5000:
     index = np.argmax(model.predict(state))
     return acts[index]
   if np.random.random() <= epsilon:
@@ -125,15 +149,15 @@ def replay(batch_size, epsilon):
     y_target = model.predict(state)
     #print(y_target)
     index = action[1]/10
-    y_target[0][int(index)] = reward# + gamma * np.max(model.predict(next_state)[0])
+    y_target[0][int(index)] = reward + gamma * np.max(model.predict(next_state)[0])
     x_batch.append(state[0])
     y_batch.append(y_target[0])
-  hist = model.fit(np.array(x_batch), np.array(y_batch), batch_size=len(x_batch), verbose=0, epochs=10, callbacks=[tensorboard] )
+  hist = model.fit(np.array(x_batch), np.array(y_batch), batch_size=len(x_batch), verbose=0, epochs=1)
   loss = hist.history['loss'][len(hist.history['loss'])-1]
   cur_loss = hist.history['loss'][len(hist.history['loss'])-1]
   print("LOSS : "  + str(cur_loss))
   file.write(str(cur_loss) + "\n")
-  if cur_loss < min_loss:
+  if cur_loss < min_loss and len(memory) >= 1000 :
     min_loss = cur_loss
     model.save_weights('final_model_weights.h5')
     with open('final_model_architecture.json', 'w') as f:
@@ -141,9 +165,9 @@ def replay(batch_size, epsilon):
 
 def main():
   global max_score
+  global hfo
   scores = deque(maxlen=100)
-
-
+  global alpha
 
   hfo.connectToServer(HIGH_LEVEL_FEATURE_SET,
                       '../bin/teams/base/config/formations-dt', 6000,
@@ -156,24 +180,25 @@ def main():
 
     status = IN_GAME
 
-
-    while status == IN_GAME:
-      features = hfo.getState()
-      usefull_feateures = filter_data(features)
+    cur_state = hfo.getState()
+    hfo.act(NOOP)
+    hfo.step()
+    while status == IN_GAME and is_final_state(cur_state) == -1 and ( (cur_state[0] < 1 and cur_state[0] > -1) and (cur_state[1] < 1 and cur_state[1] > -1) ):
+      cur_state = hfo.getState()
+      usefull_feateures = filter_data(cur_state)
       state = preprocess(usefull_feateures)
       action = choose_action(state, get_epsilon(episode))
       hfo.act(DASH, action[0], action[1]) # first param : type - for dash : second : power for dash third : angle
       status = hfo.step()
-      if status != IN_GAME:
+      if status != IN_GAME or ( (cur_state[0] > 1 or cur_state[0] < -1) or (cur_state[1] > 1 or cur_state[1] < -1) ):
         break
-      next_features = hfo.getState()
-      next_usefull_features = filter_data(next_features)
+      cur_state = hfo.getState()
+      next_usefull_features = filter_data(cur_state)
       reward = calc_reward(usefull_feateures,next_usefull_features)
       print("REWARD : " + str(reward))
       next_state = preprocess(next_usefull_features)
       remember(state, action , reward, next_state, status)
       replay(batch_size, get_epsilon(episode))
-
 
 
   if status == SERVER_DOWN:
