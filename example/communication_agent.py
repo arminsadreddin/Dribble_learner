@@ -52,23 +52,23 @@ min_loss = 9999.0
 
 def load_model():
   # Model reconstruction from JSON file
-  with open('final_model_architecture.json', 'r') as f:
+  with open('final_model_architecture.json_v2', 'r') as f:
     model = model_from_json(f.read())
 
   # Load weights into the new model
-  model.load_weights('final_model_weights.h5')
+  model.load_weights('final_model_weights_v2.h5')
   return model
 
 model = load_model()
 # model = Sequential()
-# model.add(Dense(12,input_dim=feature_size,activation='relu'))
-# model.add(Dense(24,activation='relu'))
-# model.add(Dense(12,activation='relu'))
-# model.add(Dense(out_layer,activation='relu'))
-#
-# #tensorboard = TensorBoard(log_dir="logs/{}".format(time()))
-#
-#
+# model.add(Dense(12,input_dim=feature_size,activation='relu', kernel_initializer='he_normal'))
+# model.add(Dense(24,activation='relu', kernel_initializer='he_normal'))
+# model.add(Dense(12,activation='relu', kernel_initializer='he_normal'))
+# model.add(Dense(out_layer,activation='linear'))
+
+#tensorboard = TensorBoard(log_dir="logs/{}".format(time()))
+
+
 model.compile(loss='mse', optimizer=adam(lr=alpha), metrics=['accuracy'])
 
 
@@ -86,24 +86,41 @@ def filter_data(state):
   return data
 def calc_reward(last_state,state):
 
+  ball_x = (state[3] + 1) * 52.5
+  ball_y = (state[4] + 1) * 34.0
 
-  if state[5] == True:
-    return 100.0
+  last_self_x = (last_state[0] + 1) * 52.5
+  last_self_y = (last_state[1] + 1) * 34.0
+
+  self_x = (state[0] + 1) * 52.5
+  self_y = (state[1] + 1) * 34.0
+
+  target = Point(ball_x , ball_y)
+  cur_self = Point(self_x , self_y)
+  last_self = Point(last_self_x , last_self_y)
+
+  last_to_target = Line(last_self , target)
+  cur_to_target = Line(last_self , cur_self)
+
+  return math.cos(cur_to_target.angle_between(last_to_target))
 
   # if state[5] == True:
   #   return 100.0
-  self_x = state[0] * 52.5
-  self_y = state[1] * 34.0
-  ball_x = state[3] * 52.5
-  ball_y = state[4] * 34.0
-  dist = math.sqrt(pow(self_x - ball_x , 2) + pow(self_y - ball_y, 2))
-  last_self_x = last_state[0] * 52.5
-  last_self_y = last_state[1] * 34.0
-  last_ball_x = last_state[3] * 52.5
-  last_ball_y = last_state[4] * 34.0
-  last_dist = math.sqrt(pow(last_self_x - last_ball_x, 2) + pow(last_self_y - last_ball_y, 2))
-
-  return 10*(last_dist - dist)
+  #
+  # # if state[5] == True:
+  # #   return 100.0
+  # self_x = state[0] * 52.5
+  # self_y = state[1] * 34.0
+  # ball_x = state[3] * 52.5
+  # ball_y = state[4] * 34.0
+  # dist = math.sqrt(pow(self_x - ball_x , 2) + pow(self_y - ball_y, 2))
+  # last_self_x = last_state[0] * 52.5
+  # last_self_y = last_state[1] * 34.0
+  # last_ball_x = last_state[3] * 52.5
+  # last_ball_y = last_state[4] * 34.0
+  # last_dist = math.sqrt(pow(last_self_x - last_ball_x, 2) + pow(last_self_y - last_ball_y, 2))
+  #
+  # return 10*(last_dist - dist)
 
 
 
@@ -121,12 +138,12 @@ def remember(state, action, reward, next_state, status):
 def choose_action(state, epsilon):
   global round
   acts = create_sample_action()
-  round += 1
-  if round >= 6000:
-    round = 0
-  if round >= 5000:
-    index = np.argmax(model.predict(state))
-    return acts[index]
+  #round += 1
+  # if round >= 6000:
+  #   round = 0
+  # if round >= 5000:
+  index = np.argmax(model.predict(state))
+  return acts[index]
   if np.random.random() <= epsilon:
     max_index = len(acts)
     index = random.randint(0, max_index - 1)
@@ -159,8 +176,8 @@ def replay(batch_size, epsilon):
   file.write(str(cur_loss) + "\n")
   if cur_loss < min_loss and len(memory) >= 1000 :
     min_loss = cur_loss
-    model.save_weights('final_model_weights.h5')
-    with open('final_model_architecture.json', 'w') as f:
+    model.save_weights('final_model_weights_v2.h5')
+    with open('final_model_architecture.json_v2', 'w') as f:
       f.write(model.to_json())
 
 def main():
@@ -194,11 +211,11 @@ def main():
         break
       cur_state = hfo.getState()
       next_usefull_features = filter_data(cur_state)
-      reward = calc_reward(usefull_feateures,next_usefull_features)
-      print("REWARD : " + str(reward))
+      #reward = calc_reward(usefull_feateures,next_usefull_features)
+      #print("REWARD : " + str(reward))
       next_state = preprocess(next_usefull_features)
-      remember(state, action , reward, next_state, status)
-      replay(batch_size, get_epsilon(episode))
+      #remember(state, action , reward, next_state, status)
+      #replay(batch_size, get_epsilon(episode))
 
 
   if status == SERVER_DOWN:
