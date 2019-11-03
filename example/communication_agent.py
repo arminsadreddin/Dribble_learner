@@ -44,7 +44,7 @@ memory = deque(maxlen=100000)
 hfo = HFOEnvironment()
 
 feature_size = 6 # 12
-out_layer = 36
+out_layer = 72
 
 round = 0
 
@@ -52,24 +52,25 @@ min_loss = 9999.0
 
 def load_model():
   # Model reconstruction from JSON file
-  with open('final_model_architecture.json_v2', 'r') as f:
+  with open('final_model_architecture_v4.json', 'r') as f:
     model = model_from_json(f.read())
 
   # Load weights into the new model
-  model.load_weights('final_model_weights_v2.h5')
+  model.load_weights('final_model_weights_v4.h5')
   return model
 
-model = load_model()
-# model = Sequential()
-# model.add(Dense(12,input_dim=feature_size,activation='relu', kernel_initializer='he_normal'))
-# model.add(Dense(24,activation='relu', kernel_initializer='he_normal'))
-# model.add(Dense(12,activation='relu', kernel_initializer='he_normal'))
-# model.add(Dense(out_layer,activation='linear'))
+#model = load_model()
+model = Sequential()
+model.add(Dense(12,input_dim=feature_size,activation='relu', kernel_initializer='he_normal'))
+model.add(Dense(24,activation='relu', kernel_initializer='he_normal'))
+model.add(Dense(48,activation='relu', kernel_initializer='he_normal'))
+model.add(Dense(out_layer,activation='linear'))
 
 #tensorboard = TensorBoard(log_dir="logs/{}".format(time()))
 
 
 model.compile(loss='mse', optimizer=adam(lr=alpha), metrics=['accuracy'])
+model.summary()
 
 
 
@@ -85,24 +86,20 @@ def filter_data(state):
   data.append(state[len(state) - 1 ])
   return data
 def calc_reward(last_state,state):
-
   ball_x = (state[3] + 1) * 52.5
   ball_y = (state[4] + 1) * 34.0
-
   last_self_x = (last_state[0] + 1) * 52.5
   last_self_y = (last_state[1] + 1) * 34.0
-
   self_x = (state[0] + 1) * 52.5
   self_y = (state[1] + 1) * 34.0
-
   target = Point(ball_x , ball_y)
   cur_self = Point(self_x , self_y)
   last_self = Point(last_self_x , last_self_y)
-
   last_to_target = Line(last_self , target)
+  if cur_self == last_self:
+    return -0.05
   cur_to_target = Line(last_self , cur_self)
-
-  return math.cos(cur_to_target.angle_between(last_to_target))
+  return (10*math.cos(cur_to_target.angle_between(last_to_target))) - 0.05
 
   # if state[5] == True:
   #   return 100.0
@@ -129,8 +126,10 @@ def calc_reward(last_state,state):
 def create_sample_action():
   dash_param = []
   for a in range(36):
-    #for p in range(10):
-    temp_act = [100,a*10]
+    temp_act = ["DASH",100,a*10]
+    dash_param.append(temp_act)
+  for a in range(36):
+    temp_act=["TURN",a*10,""]
     dash_param.append(temp_act)
   return dash_param
 def remember(state, action, reward, next_state, status):
@@ -138,12 +137,12 @@ def remember(state, action, reward, next_state, status):
 def choose_action(state, epsilon):
   global round
   acts = create_sample_action()
-  #round += 1
-  # if round >= 6000:
-  #   round = 0
-  # if round >= 5000:
-  index = np.argmax(model.predict(state))
-  return acts[index]
+  round += 1
+  if round >= 6000:
+     round = 0
+  if round >= 5000:
+    index = np.argmax(model.predict(state))
+    return acts[index]
   if np.random.random() <= epsilon:
     max_index = len(acts)
     index = random.randint(0, max_index - 1)
@@ -165,7 +164,12 @@ def replay(batch_size, epsilon):
   for state, action, reward, next_state, status in minibatch:
     y_target = model.predict(state)
     #print(y_target)
-    index = action[1]/10
+    index = 0
+    if action[0] == "DASH":
+      index = action[2] / 10
+    elif action[0] == "TURN":
+      index = action[1] / 10
+      index += 36
     y_target[0][int(index)] = reward + gamma * np.max(model.predict(next_state)[0])
     x_batch.append(state[0])
     y_batch.append(y_target[0])
@@ -176,8 +180,8 @@ def replay(batch_size, epsilon):
   file.write(str(cur_loss) + "\n")
   if cur_loss < min_loss and len(memory) >= 1000 :
     min_loss = cur_loss
-    model.save_weights('final_model_weights_v2.h5')
-    with open('final_model_architecture.json_v2', 'w') as f:
+    model.save_weights('final_model_weights_v4.h5')
+    with open('final_model_architecture_v4.json', 'w') as f:
       f.write(model.to_json())
 
 def main():
@@ -205,17 +209,20 @@ def main():
       usefull_feateures = filter_data(cur_state)
       state = preprocess(usefull_feateures)
       action = choose_action(state, get_epsilon(episode))
-      hfo.act(DASH, action[0], action[1]) # first param : type - for dash : second : power for dash third : angle
+      if action[0] == "DASH":
+        hfo.act(DASH, action[1], action[2])  # first param : type - for dash : second : power for dash third : angle
+      elif action[0] == "TURN":
+        hfo.act(TURN, action[1])  # first param : type - for dash : second : power for dash third : angle
       status = hfo.step()
       if status != IN_GAME or ( (cur_state[0] > 1 or cur_state[0] < -1) or (cur_state[1] > 1 or cur_state[1] < -1) ):
         break
       cur_state = hfo.getState()
       next_usefull_features = filter_data(cur_state)
-      #reward = calc_reward(usefull_feateures,next_usefull_features)
-      #print("REWARD : " + str(reward))
+      reward = calc_reward(usefull_feateures,next_usefull_features)
+      print("REWARD : " + str(reward))
       next_state = preprocess(next_usefull_features)
-      #remember(state, action , reward, next_state, status)
-      #replay(batch_size, get_epsilon(episode))
+      remember(state, action , reward, next_state, status)
+      replay(batch_size, get_epsilon(episode))
 
 
   if status == SERVER_DOWN:
