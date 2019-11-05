@@ -30,11 +30,11 @@ n_win_player = 1000
 max_env_step = 1000
 
 gamma = 0.9
-epsilon = 0.5
+epsilon = 0.2
 #epsilon_min = 0.01
 #epsilon_decay = 0.999
 
-alpha = 0.001 # learning rate
+alpha = 0.01 # learning rate
 #alpha_decay = 0.01
 alpha_test_factor = 1.0
 
@@ -59,10 +59,9 @@ def load_model():
   model.load_weights('final_model_weights_v4.h5')
   return model
 
-#model = load_model()
+# model = load_model()
 model = Sequential()
 model.add(Dense(12,input_dim=feature_size,activation='relu', kernel_initializer='he_normal'))
-model.add(Dense(24,activation='relu', kernel_initializer='he_normal'))
 model.add(Dense(48,activation='relu', kernel_initializer='he_normal'))
 model.add(Dense(out_layer,activation='linear'))
 
@@ -86,20 +85,27 @@ def filter_data(state):
   data.append(state[len(state) - 1 ])
   return data
 def calc_reward(last_state,state):
+  step_cost = -0.01
   ball_x = (state[3] + 1) * 52.5
   ball_y = (state[4] + 1) * 34.0
   last_self_x = (last_state[0] + 1) * 52.5
   last_self_y = (last_state[1] + 1) * 34.0
   self_x = (state[0] + 1) * 52.5
   self_y = (state[1] + 1) * 34.0
+  #return (300.0-sqrt(pow(self_x-ball_x,2)+pow(self_y-ball_y,2))) - 0.1
+
+
   target = Point(ball_x , ball_y)
   cur_self = Point(self_x , self_y)
   last_self = Point(last_self_x , last_self_y)
   last_to_target = Line(last_self , target)
   if cur_self == last_self:
-    return -0.05
+    return step_cost
   cur_to_target = Line(last_self , cur_self)
-  return (10*math.cos(cur_to_target.angle_between(last_to_target))) - 0.05
+  dir_value = float(math.cos(cur_to_target.angle_between(last_to_target)))
+  dist_value = float(cur_self.distance(last_self))
+  reward = float(dir_value * dist_value + step_cost)
+  return reward
 
   # if state[5] == True:
   #   return 100.0
@@ -180,8 +186,8 @@ def replay(batch_size, epsilon):
   file.write(str(cur_loss) + "\n")
   if cur_loss < min_loss and len(memory) >= 1000 :
     min_loss = cur_loss
-    model.save_weights('final_model_weights_v4.h5')
-    with open('final_model_architecture_v4.json', 'w') as f:
+    model.save_weights('final_model_weights_v7.h5')
+    with open('final_model_architecture_v7.json', 'w') as f:
       f.write(model.to_json())
 
 def main():
