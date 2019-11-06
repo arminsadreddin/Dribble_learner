@@ -21,7 +21,7 @@ from time import time
 from tensorflow.python.keras.callbacks import TensorBoard
 from sympy import *
 from sympy.geometry import *
-
+from keras import optimizers
 file = open('loss.txt', 'a')
 
 max_score = 0
@@ -30,11 +30,11 @@ n_win_player = 1000
 max_env_step = 1000
 
 gamma = 0.9
-epsilon = 0.2
+epsilon = 0.1
 #epsilon_min = 0.01
 #epsilon_decay = 0.999
 
-alpha = 0.01 # learning rate
+alpha = 0.001 # learning rate
 #alpha_decay = 0.01
 alpha_test_factor = 1.0
 
@@ -52,18 +52,18 @@ min_loss = 9999.0
 
 def load_model():
   # Model reconstruction from JSON file
-  with open('final_model_architecture_v4.json', 'r') as f:
+  with open('final_model_architecture_v8.json', 'r') as f:
     model = model_from_json(f.read())
 
   # Load weights into the new model
-  model.load_weights('final_model_weights_v4.h5')
+  model.load_weights('final_model_weights_v8.h5')
   return model
 
-# model = load_model()
-model = Sequential()
-model.add(Dense(12,input_dim=feature_size,activation='relu', kernel_initializer='he_normal'))
-model.add(Dense(48,activation='relu', kernel_initializer='he_normal'))
-model.add(Dense(out_layer,activation='linear'))
+model = load_model()
+# model = Sequential()
+# model.add(Dense(12,input_dim=feature_size,activation='relu', kernel_initializer='he_normal'))
+# model.add(Dense(48,activation='relu', kernel_initializer='he_normal'))
+# model.add(Dense(out_layer,activation='linear'))
 
 #tensorboard = TensorBoard(log_dir="logs/{}".format(time()))
 
@@ -102,7 +102,7 @@ def calc_reward(last_state,state):
   if cur_self == last_self:
     return step_cost
   cur_to_target = Line(last_self , cur_self)
-  dir_value = float(math.cos(cur_to_target.angle_between(last_to_target)))
+  dir_value = float(math.cos(cur_to_target.angle_between(last_to_target))*10.0)
   dist_value = float(cur_self.distance(last_self))
   reward = float(dir_value * dist_value + step_cost)
   return reward
@@ -143,12 +143,12 @@ def remember(state, action, reward, next_state, status):
 def choose_action(state, epsilon):
   global round
   acts = create_sample_action()
-  round += 1
-  if round >= 6000:
-     round = 0
-  if round >= 5000:
-    index = np.argmax(model.predict(state))
-    return acts[index]
+  #round += 1
+  #if round >= 6000:
+  #   round = 0
+  #if round >= 5000:
+  #index = np.argmax(model.predict(state))
+  #return acts[index]
   if np.random.random() <= epsilon:
     max_index = len(acts)
     index = random.randint(0, max_index - 1)
@@ -186,8 +186,8 @@ def replay(batch_size, epsilon):
   file.write(str(cur_loss) + "\n")
   if cur_loss < min_loss and len(memory) >= 1000 :
     min_loss = cur_loss
-    model.save_weights('final_model_weights_v7.h5')
-    with open('final_model_architecture_v7.json', 'w') as f:
+    model.save_weights('final_model_weights_v8.h5')
+    with open('final_model_architecture_v8.json', 'w') as f:
       f.write(model.to_json())
 
 def main():
@@ -228,7 +228,8 @@ def main():
       print("REWARD : " + str(reward))
       next_state = preprocess(next_usefull_features)
       remember(state, action , reward, next_state, status)
-      replay(batch_size, get_epsilon(episode))
+      if len(memory) >= 10000:
+        replay(batch_size, get_epsilon(episode))
 
 
   if status == SERVER_DOWN:
