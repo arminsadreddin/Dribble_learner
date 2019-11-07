@@ -31,10 +31,11 @@ max_env_step = 1000
 
 gamma = 0.9
 epsilon = 0.1
+state_stack = []
 #epsilon_min = 0.01
 #epsilon_decay = 0.999
 
-alpha = 0.001 # learning rate
+alpha = 0.01 # learning rate
 #alpha_decay = 0.01
 alpha_test_factor = 1.0
 
@@ -49,7 +50,6 @@ out_layer = 72
 round = 0
 
 min_loss = 9999.0
-
 def load_model():
   # Model reconstruction from JSON file
   with open('final_model_architecture_v8.json', 'r') as f:
@@ -68,7 +68,7 @@ model = load_model()
 #tensorboard = TensorBoard(log_dir="logs/{}".format(time()))
 
 
-model.compile(loss='mse', optimizer=adam(lr=alpha), metrics=['accuracy'])
+model.compile(loss='mse', optimizer=keras.optimizers.SGD(lr=alpha, nesterov=True), metrics=['accuracy'])
 model.summary()
 
 
@@ -228,7 +228,7 @@ def main():
       print("REWARD : " + str(reward))
       next_state = preprocess(next_usefull_features)
       remember(state, action , reward, next_state, status)
-      if len(memory) >= 10000:
+      if len(memory) >= 2000:
         replay(batch_size, get_epsilon(episode))
 
 
